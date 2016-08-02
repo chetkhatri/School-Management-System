@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{261600E6-BFCC-4FE5-96D0-CF20A1E4C2C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>sms.My.MyApplication</StartupObject>
+    <RootNamespace>sms</RootNamespace>
+    <AssemblyName>sms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Resources\sms_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>sms.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>sms.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073" />
+    <Reference Include="DevExpress.XtraCharts.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v8.3.UI, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v8.3.Web, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v8.3.Design.Win, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v8.3.Presets, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v8.3.Win, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3.Import, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3.Web, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v8.3.Extensions, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.Extensions, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.iCalendarExchange, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.OutlookExchange, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.Printing, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.VCalendarExchange, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.3.Design, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraWizard.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=5377c8e3b72b4073, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employeeinfo.Designer.vb">
+      <DependentUpon>Employeeinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employeeinfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmabt.Designer.vb">
+      <DependentUpon>frmabt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmabt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmallowance.Designer.vb">
+      <DependentUpon>frmallowance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmallowance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbackup.Designer.vb">
+      <DependentUpon>frmbackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcalender.Designer.vb">
+      <DependentUpon>frmcalender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcalender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchangepw.Designer.vb">
+      <DependentUpon>frmchangepw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmchangepw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmclass_entry.Designer.vb">
+      <DependentUpon>frmclass_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmclass_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemployee.Designer.vb">
+      <DependentUpon>frmemployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmemployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfees.Designer.vb">
+      <DependentUpon>frmfees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgrmaster.Designer.vb">
+      <DependentUpon>frmgrmaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmgrmaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhrm.Designer.vb">
+      <DependentUpon>frmhrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmhrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmarking.Designer.vb">
+      <DependentUpon>frmmarking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmarking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmarksedit.Designer.vb">
+      <DependentUpon>frmmarksedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmarksedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewac.designer.vb">
+      <DependentUpon>frmnewac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpost.Designer.vb">
+      <DependentUpon>frmpost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrestore.Designer.vb">
+      <DependentUpon>frmrestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmresultfilter.Designer.vb">
+      <DependentUpon>frmresultfilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmresultfilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmscholorship.Designer.vb">
+      <DependentUpon>frmscholorship.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmscholorship.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstartscreen.Designer.vb">
+      <DependentUpon>frmstartscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmstartscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstudentinfo.Designer.vb">
+      <DependentUpon>frmstudentinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmstudentinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsub_entry.Designer.vb">
+      <DependentUpon>frmsub_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsub_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtaxallview.Designer.vb">
+      <DependentUpon>frmtaxallview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtaxallview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtaxrate.Designer.vb">
+      <DependentUpon>frmtaxrate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtaxrate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuserview.Designer.vb">
+      <DependentUpon>frmuserview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmuserview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewall.Designer.vb">
+      <DependentUpon>frmviewall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewemp.Designer.vb">
+      <DependentUpon>frmviewemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewgr.Designer.vb">
+      <DependentUpon>frmviewgr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewstd.Designer.vb">
+      <DependentUpon>frmviewstd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewstd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\databind.vb" />
+    <Compile Include="Modules\DataItem.vb" />
+    <Compile Include="Modules\validation.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="process.Designer.vb">
+      <DependentUpon>process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="process.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptaddmission.Designer.vb">
+      <DependentUpon>rptaddmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptaddmission.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptallowance.Designer.vb">
+      <DependentUpon>rptallowance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptallowance.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptempsal.Designer.vb">
+      <DependentUpon>rptempsal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptempsal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptfeesreceipt.Designer.vb">
+      <DependentUpon>rptfeesreceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptfeesreceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptfeestat.Designer.vb">
+      <DependentUpon>rptfeestat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptfeestat.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptgrstatement.Designer.vb">
+      <DependentUpon>rptgrstatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptgrstatement.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptloginfo.Designer.vb">
+      <DependentUpon>rptloginfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptloginfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptresult.Designer.vb">
+      <DependentUpon>rptresult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptresult.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptresultall.Designer.vb">
+      <DependentUpon>rptresultall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptresultall.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptscholorstat.Designer.vb">
+      <DependentUpon>rptscholorstat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptscholorstat.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpttax.Designer.vb">
+      <DependentUpon>rpttax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpttax.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptuserinfo.Designer.vb">
+      <DependentUpon>rptuserinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptuserinfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="xrresult.Designer.vb">
+      <DependentUpon>xrresult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrresult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Employeeinfo.resx">
+      <DependentUpon>Employeeinfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmabt.resx">
+      <DependentUpon>frmabt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmallowance.resx">
+      <DependentUpon>frmallowance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbackup.resx">
+      <DependentUpon>frmbackup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcalender.resx">
+      <DependentUpon>frmcalender.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchangepw.resx">
+      <DependentUpon>frmchangepw.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclass_entry.resx">
+      <DependentUpon>frmclass_entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmemployee.resx">
+      <DependentUpon>frmemployee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfees.resx">
+      <DependentUpon>frmfees.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgrmaster.resx">
+      <DependentUpon>frmgrmaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhrm.resx">
+      <DependentUpon>frmhrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmarking.resx">
+      <DependentUpon>frmmarking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmarksedit.resx">
+      <DependentUpon>frmmarksedit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewac.resx">
+      <DependentUpon>frmnewac.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpost.resx">
+      <DependentUpon>frmpost.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrestore.resx">
+      <DependentUpon>frmrestore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmresultfilter.resx">
+      <DependentUpon>frmresultfilter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmscholorship.resx">
+      <DependentUpon>frmscholorship.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstartscreen.resx">
+      <DependentUpon>frmstartscreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstudentinfo.resx">
+      <DependentUpon>frmstudentinfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsub_entry.resx">
+      <DependentUpon>frmsub_entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtaxallview.resx">
+      <DependentUpon>frmtaxallview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtaxrate.resx">
+      <DependentUpon>frmtaxrate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuserview.resx">
+      <DependentUpon>frmuserview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewall.resx">
+      <DependentUpon>frmviewall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewemp.resx">
+      <DependentUpon>frmviewemp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewgr.resx">
+      <DependentUpon>frmviewgr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewstd.resx">
+      <DependentUpon>frmviewstd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="process.resx">
+      <DependentUpon>process.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptaddmission.resx">
+      <DependentUpon>rptaddmission.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptallowance.resx">
+      <DependentUpon>rptallowance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptempsal.resx">
+      <DependentUpon>rptempsal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptfeesreceipt.resx">
+      <DependentUpon>rptfeesreceipt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptfeestat.resx">
+      <DependentUpon>rptfeestat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptgrstatement.resx">
+      <DependentUpon>rptgrstatement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptloginfo.resx">
+      <DependentUpon>rptloginfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptresult.resx">
+      <DependentUpon>rptresult.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptresultall.resx">
+      <DependentUpon>rptresultall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptscholorstat.resx">
+      <DependentUpon>rptscholorstat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpttax.resx">
+      <DependentUpon>rpttax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptuserinfo.resx">
+      <DependentUpon>rptuserinfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrresult.resx">
+      <DependentUpon>xrresult.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_description.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileViewerIcon.175x175-75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1345457659_contact-new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1345457659_contact-new1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11229.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112291.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\global-search-icon-400x320.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-service-fees-crossword-3d-icon-87215998+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income-icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift_of_money_1600_clr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentloan_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\examicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmf-search-result-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_result_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1345457642_user-group-new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\911009_stock_photo_search_employee_icon_copy_256px.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20100512-1password.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsc-image2+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-search-icon+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit+foto.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\911009_stock_photo_search_employee_icon_copy_256px1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6159716-indian-rupees-sign-from-red-with-gold-frame-roman-alphabet-set-isolated-on-white-computer-generated-+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1346059735_system-software-update.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HouseMoneyStockXCHNG+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stax+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuitGroups_Icon+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u15799552+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_data.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agent_registration_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agent_registration_icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agent_registration_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_icon_vector_829755_copy_256px.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Download-Database-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Upload-Database-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1344503665U0GC63+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color+MS+Excel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1328597291L276J8+copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class_room_icon_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subject_icon_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-Male-User-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_sms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smsn copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smsn copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Disk01-Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kuba_icon_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kuba_icon_delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-software-update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_print_preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social_yahoo_box_lilac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skype Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

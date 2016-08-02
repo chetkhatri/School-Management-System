@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sms", "sms\sms.vbproj", "{261600E6-BFCC-4FE5-96D0-CF20A1E4C2C9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SMS_Setup", "SMS_Setup\SMS_Setup.vdproj", "{579EB0BF-2F1D-45D3-82DC-9F1CCD76769F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{261600E6-BFCC-4FE5-96D0-CF20A1E4C2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261600E6-BFCC-4FE5-96D0-CF20A1E4C2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261600E6-BFCC-4FE5-96D0-CF20A1E4C2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261600E6-BFCC-4FE5-96D0-CF20A1E4C2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579EB0BF-2F1D-45D3-82DC-9F1CCD76769F}.Debug|Any CPU.ActiveCfg = Debug
+		{579EB0BF-2F1D-45D3-82DC-9F1CCD76769F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
